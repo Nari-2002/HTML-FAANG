@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop mama</title>
+    <style>
+        nav{
+            display: flex;
+            flex-direction:row-reverse;
+            gap: 20px;
+            
+        }
+        nav a{
+            text-decoration: none;
+            padding:10px ;
+            font-size: 20px;
+        }
+        .product-container{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 15%;
+            margin: 10px;
+        }
+        .product{
+           border: 4px ; 
+           height: 380px;
+           width: 210px;
+           padding: 10px;
+           margin: 10px;
+           box-shadow: 2px 2px 3px 2px rgba(92, 105, 102, 0.484);
+        }
+        img{
+            height:200px;
+            width: 200px;
+            align-self: center;
+        }
+        .price{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .navba{
+            display: block;
+            width: 100%;
+
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #436e66a9;
+        }
+        .addtocart{
+            background-color: rgb(99, 168, 228);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .addtocart:hover{
+             box-shadow: 2px 2px 3px 2px rgba(225, 14, 186, 0.874);
+        }
+        .navbar-container h1{
+            position: relative;
+            top:-8px;
+            left: 5px;
+        }
+        .searchbar {
+            border: none;
+            padding: 8px 12px;
+            flex: 1;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .searchicon {
+            border: none;
+            background-color: transparent;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 350px;
+            background-color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="navba">
+        <div class="navbar-container">
+            <h1 style="height: 20px;font-family: cursive;">🛒SHOPYY</h1>
+            <div class="search">
+                <input class="searchbar" type="text" placeholder="search">
+                <button class="searchicon">🔍</button>
+            </div>
+            <nav>
+                <a href="#">home</a>
+                <a href="#">cart</a>
+                <a href="#">categories</a>
+            </nav>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/basketball.jpg" alt="basketball">
+            <h3>Basket Ball</h3>
+            <i class="price">price: &#8377 555/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/cricketbat.jpeg" alt="cricketbat">
+            <h3>Cricket Bat</h3>
+            <i class="price">price: &#8377 999/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/shuttlebat.jpg" alt="shuttlebat">
+            <h3>Shuttle Bat</h3>
+            <i class="price">price: &#8377 666/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/cricketballs.png" alt="cricketballs">
+            <h3>Cricket Balls</h3>
+            <i class="price">price: &#8377 555/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+    </div>
+</body>
+</html>
