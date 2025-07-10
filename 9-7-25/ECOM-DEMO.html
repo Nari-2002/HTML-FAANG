@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop mama</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
         nav{
             display: flex;
             flex-direction:row-reverse;
@@ -13,13 +17,13 @@
         }
         nav a{
             text-decoration: none;
-            padding:10px ;
+            padding:5px ;
             font-size: 20px;
         }
         .product-container{
             display: flex;
             flex-wrap: wrap;
-            padding-left: 15%;
+            justify-content: center;
             margin: 10px;
         }
         .product{
@@ -47,6 +51,7 @@
         .navbar-container {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             background-color: #436e66a9;
         }
@@ -88,19 +93,18 @@
             width: 350px;
             background-color: white;
         }
-
-        
+ 
     </style>
 </head>
 <body>
     <div class="navba">
         <div class="navbar-container">
-            <h1 style="height: 20px;font-family: cursive;">🛒SHOPYY</h1>
+            <h1 style="height: 20px;font-family: cursive;width:max-content;">🛒SHOPYY</h1>
             <div class="search">
                 <input class="searchbar" type="text" placeholder="search">
                 <button class="searchicon">🔍</button>
             </div>
-            <nav>
+            <nav style="display: flex;">
                 <a href="#">home</a>
                 <a href="#">cart</a>
                 <a href="#">categories</a>

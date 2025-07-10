@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float demo</title>
+    <style>
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        [alt="python"]{
+            float: right;
+        }
+        [alt="java"]{
+            float: left;
+        }
+        [alt="javascript"]{
+            float:right ;
+        }
+        .container{
+            padding: 10px;
+            background-color: burlywood;
+        }
+        .python,.java,.javascript{
+            overflow: hidden;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 4px 3px 5px gray;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .python:hover,.java:hover,.javascript:hover{
+            border: 2px solid black;
+             box-shadow: 2px 3px 5px rgb(83, 179, 224);
+        }
+        
+        p{
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="python">
+            <img src="images/python.png" alt="python">
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.It supports    multiple paradigms, including procedural, object-oriented, and functional programming.Due to its clear syntax, Python is great for beginners and professionals alike.It is widely used in web development, data science, machine learning, automation, and more.Popular frameworks like Django, Flask, and FastAPI simplify web development in Python.Python has a rich ecosystem of libraries like NumPy, Pandas, and TensorFlow.Its interactive shell and scripting capabilities make rapid development easy.Python is cross-platform and open-source, with a large developer community.It emphasizes code readability, reducing the cost of program maintenance.Python continues to be one of the most in-demand languages in tech.     
+            </p>
+        </div>
+        <div class="java">
+            <img src="images/java.jpg" alt="java">
+            <p>
+                Java is a class-based, object-oriented programming language developed by Sun Microsystems.It is designed to be platform-independent using the Java Virtual Machine (JVM).Java follows the “write once, run anywhere” philosophy, making it ideal for cross-platform apps.It is commonly used in enterprise applications, Android development, and backend systems.Java is known for its robustness, performance, and strong memory management.Popular frameworks like Spring and Hibernate support large-scale applications.Java supports multithreading, making it suitable for high-performance applications.Its strong typing and compile-time checking help reduce runtime errors.With a large standard library, Java provides tools for networking, GUI, and more.Java remains one of the most widely used programming languages in the industry.
+            </p>
+        </div>
+        <div class="javascript">
+            <img src="images/javascript.jpg" alt="javascript">
+            <p>
+                JavaScript is a dynamic, high-level scripting language primarily used for web development.It enables interactive features like animations, form validation, and dynamic content updates.Running in the browser, JavaScript powers client-side interactivity on modern websites.It works with HTML and CSS to build responsive and engaging web applications.Frameworks like React, Angular, and Vue.js have revolutionized front-end development.Node.js allows JavaScript to be used for backend development as well.JavaScript supports asynchronous programming with features like promises and async/await.It is event-driven, making it ideal for real-time apps like chats and games.JavaScript is constantly evolving, with ECMAScript updates introducing new features.It remains essential for full-stack development and is supported by all major browsers.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
