@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop mama</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .product-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 10px;
+            height: 100%;
+            align-items: center;
+        }
+        .product{
+           border: 4px ; 
+           height: 380px;
+           width: 210px;
+           padding: 10px;
+           margin: 10px;
+           box-shadow: 2px 2px 3px 2px rgba(92, 105, 102, 0.484);
+           
+        }
+        .product:hover{
+            transform: translateY(20px);
+            box-shadow: 2px 2px 3px 2px rgba(13, 231, 180, 0.484);
+        }
+        img{
+            height:200px;
+            width: 200px;
+            align-self: center;
+        }
+        .price{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .navba{
+            display: block;
+            width: 100%;
+
+        }
+        
+        .addtocart{
+            background-color: rgb(99, 168, 228);
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0% 20% 0% 20%;
+            height: 40px;
+            transition:1s ;
+        }
+        .addtocart:hover{
+             box-shadow: 2px 2px 3px 2px rgba(225, 14, 186, 0.874);
+             background-color: rgb(12, 123, 220);
+             color: aliceblue;
+             
+          
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Products page</h1>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/basketball.jpg" alt="basketball">
+            <h3>Basket Ball</h3>
+            <i class="price">price: &#8377 555/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/cricketbat.jpeg" alt="cricketbat">
+            <h3>Cricket Bat</h3>
+            <i class="price">price: &#8377 999/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/shuttlebat.jpg" alt="shuttlebat">
+            <h3>Shuttle Bat</h3>
+            <i class="price">price: &#8377 666/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+        <div class="product">
+            <img src="images/cricketballs.png" alt="cricketballs">
+            <h3>Cricket Balls</h3>
+            <i class="price">price: &#8377 555/-</i>
+            <p>rating: ⭐⭐⭐⭐⭐</p>
+            <button class="addtocart">Add to cart 🛒</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uncatchable Box</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      border: 2px dashed white;
+      overflow: hidden;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      /* Move to a random position (simulate randomness with multiple options) */
+      transform: translate(120px, -130px);
+    }
+
+    /* Optional: Make the box move to different positions using animation steps */
+    @keyframes dodge {
+      0%   { transform: translate(0, 0); }
+      25%  { transform: translate(120px, -130px); }
+      50%  { transform: translate(-180px, 100px); }
+      75%  { transform: translate(150px, 80px); }
+      100% { transform: translate(-100px, -120px); }
+    }
+
+    .box:hover {
+      animation: dodge 1s steps(1, end) infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

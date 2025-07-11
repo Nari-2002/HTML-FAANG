@@ -10,7 +10,7 @@
             padding: 0;
             /* border: 1px solid red; */
             height: 100vh;
-            background-color: rgba(103, 89, 89, 0.322);
+            background-color: rgba(34, 32, 32, 0.847);
         }
         .navbar{
             display: flex;
@@ -24,18 +24,34 @@
             text-decoration: none;
             margin: 10px;
         }
-        button{
-            margin-left: auto;
-            background-color: chartreuse;
-            width: 100px;
-            height: 30px;
-            border-radius: 10px;
-            border: none;
-            margin-right: 10px;
-        }
+        
         .container{
+            display: flex;
+            justify-content: center;
+            padding:20px ;
+            
+
+        }
+        .card{
+            color: rgb(33, 34, 35);
+            margin-right:20px ;
+            height: 450px;
+            width: 400px;
+            align-items: center;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(85, 84, 84);
+            background-color: rgba(255, 253, 251, 0.924);
+            border-radius: 10px;
+            
+        }
+        .card:hover{
+            transform:translateY(10px);
+            border: 3px solid rgba(32, 141, 172, 0.706);
+            box-shadow: 5px 5px 5px rgb(96, 204, 240);
+        }
+        .place{
+            border-radius: 5px;
         }
        
     </style>
@@ -51,11 +67,35 @@
         <a href="singapur.html">Singapur</a>
     </nav>  
     <div class="container">
-        <h1>RED FORT</h1>
-        <img class="place" src="images/india.jpg" alt="red fort" height="300px" width="400px">
-        <p style="text-align: justify;">
-            The Red Fort, located in Delhi, India, is a historic monument that stands as a symbol of India’s rich cultural heritage. Built by the Mughal Emperor Shah Jahan in 1648, it served as the main residence of the Mughal emperors for nearly 200 years. The fort gets its name from its massive red sandstone walls, which enclose a complex of palaces, gardens, and ceremonial halls. Architecturally, the Red Fort is a masterpiece, blending Persian, Timurid, and Indian styles. Important structures within the fort include the Diwan-i-Aam (Hall of Public Audience) and the Diwan-i-Khas (Hall of Private Audience). Every year on Independence Day, the Prime Minister of India hoists the national flag at the Red Fort and addresses the nation. Recognized as a UNESCO World Heritage Site, the Red Fort remains a powerful reminder of India’s historical legacy and architectural brilliance. Tourists from around the world visit it to witness its grandeur and historical significance.
-        </p>
+        <div class="card">
+            <h1>RED FORT</h1>
+            <img class="place" src="images/india.jpg" alt="red fort" height="200px" width="300px">
+            <p style="text-align: justify;">
+                The Red Fort, located in Delhi, India, is a historic monument that stands as a symbol of India’s rich cultural heritage. Built by the Mughal Emperor Shah Jahan in 1648, it served as the main residence of the Mughal emperors for nearly 200 years.
+            </p>
+        </div>
+        <div class="card">
+            <h1>Charminar</h1>
+            <img class="place" src="images/india-charminar.jpg" alt="charminar" height="200px" width="300px">
+            <p style="text-align: justify;">
+                The Charminar masjid is a square structure with each side being 20 metres (66 ft) long. Each of the four sides has one of four grand arches, each facing a fundamental point that opens directly onto the street in front of it.
+            </p>
+        </div>        <div class="card">
+            <h1>Hawa Mahal </h1>
+            <img class="place" src="images/india-Hawa-Mahal.jpg" alt="Hawa Mahal" height="200px" width="300px">
+            <p style="text-align: justify;">
+                Hawa Mahal is known as the “palace of winds“. Maharaja Sawai Pratap Singh built the palace in 1799. Hawa Mahal is considered to be unique as it has many small windows and balconies that seem like a honeycomb.
+            </p>
+        </div>        <div class="card">
+            <h1>veerabhadra temple</h1>
+            <img class="place" src="images/india-veera-bhadra-temple.jpg" alt="Veerabhadra" height="200px" width="300px">
+            <p style="text-align: justify;">
+                Veerabhadra temple is a Hindu temple located in the Lepakshi, in the state of Andhra Pradesh, India. The temple is dedicated to the Virabhadra, a fierce form of the god Shiva.
+                Built in the 16th century.
+            </p>
+        </div>
+
+        
     </div> 
 </body>
 </html>
