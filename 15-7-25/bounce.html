@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            border-radius: 50%;
+            top:600px;
+            animation: bounce 4s infinite alternate;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(-500px);
+            }
+            50%{
+                transform: translate(100px,0px);
+            }
+            75%{
+                transform: translate(200px,-500px);
+            }
+            100%{
+                 transform: translateY(0px);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 400px;
+           border:5px solid green;
+            animation: demo1 1s infinite alternate ;
+
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+           border:5px solid rgb(41, 200, 41);
+            animation: demo2 1s infinite alternate;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            border:5px solid rgb(89, 148, 89);
+            animation: demo3 1s infinite alternate;
+        }
+        .div4{
+            width: 100px;
+            height: 100px;
+            border:5px solid rgb(136, 211, 136);
+            animation: demo4 1s infinite alternate-reverse;
+        }
+        div{
+            border-radius: 50%;
+            padding: 50px;
+        }
+        @keyframes demo1{
+            0%{
+                opacity: 1;
+            }
+            25%{
+              opacity: 1;  
+            }
+            50%{
+              opacity: 1;  
+            }
+            75%{
+              opacity: 1;  
+            }
+            100%{
+              opacity: 0;  
+            }
+        }
+        @keyframes demo2{
+            0%{
+                opacity: 0;
+            }
+            25%{
+              opacity: 1;  
+            }
+            50%{
+              opacity: 1;  
+            }
+            75%{
+              opacity: 1;  
+            }
+            100%{
+              opacity: 1;  
+            }
+        }
+        @keyframes demo3{
+            0%{
+                opacity: 0;
+            }
+            25%{
+              opacity: 0;  
+            }
+            50%{
+              opacity: 1;  
+            }
+            75%{
+              opacity: 1;  
+            }
+            100%{
+              opacity: 1;  
+            }
+        }
+        @keyframes demo4{
+            0%{
+                opacity: 0;
+            }
+            25%{
+              opacity: 0;  
+            }
+            50%{
+              opacity: 0;  
+            }
+            75%{
+              opacity: 1;  
+            }
+            100%{
+              opacity: 1;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            animation: demo1 1s infinite alternate;
+
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(41, 200, 41);
+            animation: demo2 2s infinite;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(89, 148, 89);
+            animation: demo3 3s infinite;
+        }
+        .div4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(136, 211, 136);
+            animation: demo4 4s infinite;
+        }
+        div{
+            border-radius: 50%;
+            padding: 50px;
+        }
+        @keyframes demo1{
+            0%{
+                display:block;
+            }
+            25%{
+              display:block;  
+            }
+            50%{
+              display:block;  
+            }
+            75%{
+              display:block;  
+            }
+            100%{
+              display:block;  
+            }
+        }
+        @keyframes demo2{
+            0%{
+                display: none;
+            }
+            25%{
+              display:block;  
+            }
+            50%{
+              display:block;  
+            }
+            75%{
+              display:block;  
+            }
+            100%{
+              display:block;  
+            }
+        }
+        @keyframes demo3{
+            0%{
+                display: none;
+            }
+            25%{
+              display: none;  
+            }
+            50%{
+              display:block;  
+            }
+            75%{
+              display:block;  
+            }
+            100%{
+              display:block;  
+            }
+        }
+        @keyframes demo4{
+            0%{
+                display: none;
+            }
+            25%{
+              display:block;  
+            }
+            50%{
+              display:block;  
+            }
+            75%{
+              display:block;  
+            }
+            100%{
+              display:block;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoom Circles Animation</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      animation: pulse 2s infinite ease-in-out alternate;
+    }
+
+    .div1 {
+      width: 400px;
+      height: 400px;
+      border: 6px solid red;
+      animation-delay: 0s;
+    }
+
+    .div2 {
+      width: 300px;
+      height: 300px;
+      border: 6px solid green;
+      animation-delay: 0.3s;
+    }
+
+    .div3 {
+      width: 200px;
+      height: 200px;
+      border: 6px solid yellow;
+      animation-delay: 0.6s;
+    }
+
+    .div4 {
+      width: 100px;
+      height: 100px;
+      border: 6px solid #99ff99;
+      animation-delay: 0.9s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        /* opacity: 0.2; */
+      }
+      50% {
+        transform: scale(1.1);
+        /* opacity: 1; */
+      }
+      100% {
+        transform: scale(1);
+        /* opacity: 0.2; */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle div1"></div>
+  <div class="circle div2"></div>
+  <div class="circle div3"></div>
+  <div class="circle div4"></div>
+</body>
+</html>
