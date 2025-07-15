@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.logo{
+    height: 50px;
+    margin-right: auto;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color:transparent;
+    height: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    color: white;
+    font-family: sans-serif;
+    background-color: #ff5200;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.getapp{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    
+    justify-content: center;
+}
+.arr{
+   transform: rotate(-40deg);
+}
+
+.AnVKL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    padding:15px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.signin {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid #0f0e0e;
+    padding:15px 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    background-color: #ff5200;
+}
+.middle1{
+    width: 100%;
+    padding-top: 40px;
+    place-items: center;
+    gap: 4%;   
+}
+.mainmoto{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding:20px 10%;
+}  
+ 
+.middle11{
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        width: 40%;
+        height: 50px;
+        background-color: #fff;
+}
+.middle12{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 59%;
+    height: 50px;
+    background-color: #fff;
+}
+.locsearch{
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        width: 300px;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: bold;
+}
+.foodsearch{
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    width: 300px;
+    margin-right:auto ;
+    font-size: 16px;
+    font-weight: bold;
+}
+.middle2{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    padding: 0px 5%;
+}
+.middle3con{
+    background-color: #ff5200;
+    height: 210px;
+}
+.middle3{
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-x: scroll;
+    background-color: #ff5200;
+}
