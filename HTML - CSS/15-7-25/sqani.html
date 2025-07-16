@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .placeblock{
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+        }
+        .completeblock{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 50px;
+            gap: 10px;
+            transform: rotate(45deg);
+        }
+        .div1{
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            animation: rotate 4s infinite linear;
+        }
+        .div2{
+            width: 70px;
+            height: 70px;
+            background-color: lightblue;
+            animation: rotate1 4s infinite linear;
+        }
+        .div3{
+            width: 70px;
+            height: 70px;
+            background-color: lightblue;
+            animation: rotate3 4s infinite linear;
+        }
+        .div4{
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            animation: rotate2 4s infinite linear;
+        }
+        @keyframes rotate {
+            0%,100%{
+                transform: translate(0,0);
+                z-index: 1;
+            }
+            25%{
+                transform: translate(80px,0);
+                z-index: 2;
+            }
+            50%{
+                transform: translate(80px,80px);
+                z-index: 3;
+            } 
+            75%{
+                transform: translate(0,80px);
+                z-index: 4;
+
+            }
+        }
+        @keyframes rotate1 {
+            0%,100%{
+                transform: translate(0,0);
+                z-index: 1;
+            }
+            25%{
+                transform: translate(0,80px);
+                z-index: 2;
+            }
+            50%{
+                transform: translate(-80px,80px); 
+                z-index: 3;
+            }
+            75%{
+                transform: translate(-80px,0);
+                z-index: 4;
+            }
+
+        }
+        @keyframes rotate2 {
+            0%{
+                transform: translate(0,0);
+                z-index: 1;
+            }
+            25%{
+                transform: translate(-80px,0);
+                z-index: 2;
+            }
+            50%{
+                transform: translate(-80px,-80px);
+                z-index: 3;
+            }
+            75%{
+                transform: translate(0,-80px);
+                z-index: 4;
+            }
+        }
+        @keyframes rotate3 {
+            0%,100%{
+                transform: translate(0,0);
+                z-index: 1;
+            }
+            25%{
+                transform: translate(0,-80px);
+                z-index: 2;
+            }
+            50%{
+                transform: translate(80px,-80px);
+                z-index: 3;
+            }
+            75%{
+                transform: translate(80px,0);
+                z-index: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="placeblock">
+    <div class="completeblock">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+    </div>
+</body>
+</html>

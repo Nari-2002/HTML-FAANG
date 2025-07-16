@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flip Animation</title>
+  <style>
+    .flip-container {
+      /* perspective: 1000px; */
+      width: 200px;
+      height: 300px;
+      margin: 100px auto;
+    }
+
+    .flipper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-container:hover .flipper {
+      transform: rotateY(180deg); 
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-family: sans-serif;
+    }
+
+    .front {
+      background-color: lightblue;
+    }
+
+    .back {
+      background-color: tomato;
+      transform: rotateY(180deg); /* flip the back side */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flip-container">
+    <div class="flipper">
+      <div class="front">Front</div>
+      <div class="back">Back</div>
+    </div>
+  </div>
+
+</body>
+</html>
