@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Face</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .face {
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background-color: rgb(211, 40, 40);
+      position: relative;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 300px;
+      position: absolute;
+      top: 150px;
+      left: 150px;
+    }
+
+    .eye {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyeball {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      animation: move 2s infinite linear;
+    }
+
+    .mouth {
+      width: 200px;
+      height: 100px;
+      background-color: black;
+      border-radius: 0 0 100px 100px;
+      position: absolute;
+      bottom: 120px;
+      left: 200px;
+    }
+
+    @keyframes move {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(20px, 0px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="face">
+    <div class="container">
+      <div class="eye">
+        <div class="eyeball"></div>
+      </div>
+      <div class="eye">
+        <div class="eyeball"></div>
+      </div>
+    </div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
